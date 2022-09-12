@@ -22,7 +22,7 @@ class Note extends React.Component {
     this.ShowNote = this.ShowNote.bind(this);
   }
   addNote(e) {
-    if (e.code === "Enter" && e.target.value!==") {
+    if (e.code === "Enter" && e.target.value!=="") {
       this.arr.push(e.target.value);
       this.setState({
         list: this.arr,
